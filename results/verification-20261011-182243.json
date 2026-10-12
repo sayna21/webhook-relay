@@ -1,0 +1,63 @@
+{
+  "git_sha": "9d59454627ef85895d452bf4b39888d9bdcde663",
+  "dirty": false,
+  "started_at": "2026-10-11T18:21:52.591452+00:00",
+  "finished_at": "2026-10-11T18:22:42.785295+00:00",
+  "command": "python -m pytest --cov=relay --cov=receiver; python scripts/demo.py",
+  "params": {
+    "clean_clone": true,
+    "checks": {
+      "lint": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "format": [
+        "python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "test": [
+        "python",
+        "-m",
+        "pytest",
+        "--junitxml",
+        "D:\\friends_projects\\.relay-build\\release-tests.xml",
+        "--cov=relay",
+        "--cov=receiver",
+        "--cov-report=term-missing",
+        "--cov-report=json:D:\\friends_projects\\.relay-build\\release-coverage.json"
+      ],
+      "demo": [
+        "python",
+        "scripts/demo.py"
+      ]
+    }
+  },
+  "machine": {
+    "os": "Windows-10-10.0.26200-SP0",
+    "cpu_model": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "cores": 16,
+    "ram_gb": 15.65
+  },
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "postgres_version": "18.4",
+  "tests": {
+    "passed": 258,
+    "failed": 0,
+    "skipped": 0
+  },
+  "checks": {
+    "lint": 0,
+    "format": 0,
+    "test": 0,
+    "demo": 0
+  },
+  "source_sha256": "b7ef2594143933b5fa2b3d1dcb84a937721a23f0c44c59bfc98bdb0abd7609ba",
+  "coverage_percent": 97.20767888307155
+}
